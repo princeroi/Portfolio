@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/styles.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Prince Roi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1>Your Partner in Bringing Ideas to Life</h1>
+                    <p class="hero-subtitle">Expert in Automation, Machine Learning & Full-Stack Development</p>
+                    <a href="#contact" class="btn btn-primary-custom btn-lg">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Services I Offer</h2>
+            <div class="row g-4">
+                <div class="col-md-4 scroll-animate">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Automation Solutions</h3>
+                        <p>Transform the way you work through intelligent automation and advanced technology integrations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 scroll-animate">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Machine Learning</h3>
+                        <p>Build predictive models and AI solutions that drive business insights and intelligent decision-making.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 scroll-animate">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Full-Stack Development</h3>
+                        <p>Build powerful, dynamic web applications that deliver smooth and intuitive user experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 scroll-animate">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Design</h3>
+                        <p>Design and optimize SQL databases for performance, scalability, and data integrity.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 scroll-animate">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Game Development</h3>
+                        <p>Create immersive experiences with Unreal Engine Blueprint Scripting and interactive gameplay mechanics.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 scroll-animate">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>IoT Solutions</h3>
+                        <p>Develop connected devices and smart systems that bridge the physical and digital worlds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- Schedule Optimization Project -->
+                <div class="col-md-6 col-lg-4 scroll-animate">
+                    <div class="project-card" data-project-id="schedule-optimization">
+                        <div class="project-image">
+                            <div class="project-slideshow">
+                                <div class="project-slide active">
+                                    <img src="asset/image/ISOS1.png" alt="">
+                                </div>
+                                <div class="project-slide">
+                                    <img src="asset/image/ISOS2.png" alt="">
+                                </div>
+                                <div class="project-slide">
+                                    <img src="asset/image/ISOS3.png" alt="">
+                                </div>
+                            </div>
+                            <button class="slideshow-arrow prev" onclick="changeSlide(event, 'schedule-optimization', -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slideshow-arrow next" onclick="changeSlide(event, 'schedule-optimization', 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="slideshow-indicators">
+                                <span class="indicator-dot active" onclick="goToSlide(event, 'schedule-optimization', 0)"></span>
+                                <span class="indicator-dot" onclick="goToSlide(event, 'schedule-optimization', 1)"></span>
+                                <span class="indicator-dot" onclick="goToSlide(event, 'schedule-optimization', 2)"></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">CSP Algorithm</span>
+                            <span class="project-tag">Genetic Algorithm</span>
+                            <h4>Intelligent Schedule Optimization System</h4>
+                            <p>Automatically generate conflict-free schedules using constraint solving and genetic optimization to boost efficiency and reduce manual planning.</p>
+                            <div class="project-buttons">
+                                <a href="https://github.com/princeroi/Smart_Scheduling_System.git" class="btn-github" target="_blank">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <button class="btn-demo" data-bs-toggle="modal" data-bs-target="#demoModal" 
+                                        data-system-url="https://scheduling-system-hi5w.onrender.com/"
+                                        data-project="Intelligent Schedule Optimization System">
+                                    <i class="fas fa-play"></i> Try Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scheduling System -->
+                <div class="col-md-6 col-lg-4 scroll-animate">
+                    <div class="project-card" data-project-id="Scheduling-platform">
+                        <div class="project-image">
+                            <div class="project-slideshow">
+                                <div class="project-slide active">
+                                    <img src="asset/image/PSO1.png" alt="">
+                                </div>
+                                <div class="project-slide">
+                                    <img src="asset/image/PSO2.png" alt="">
+                                </div>
+                                <div class="project-slide">
+                                    <img src="asset/image/PSO3.png" alt="">
+                                </div>
+                            </div>
+                            <button class="slideshow-arrow prev" onclick="changeSlide(event, 'Scheduling-platform', -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slideshow-arrow next" onclick="changeSlide(event, 'Scheduling-platform', 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="slideshow-indicators">
+                                <span class="indicator-dot active" onclick="goToSlide(event, 'Scheduling-platform', 0)"></span>
+                                <span class="indicator-dot" onclick="goToSlide(event, 'Scheduling-platform', 1)"></span>
+                                <span class="indicator-dot" onclick="goToSlide(event, 'Scheduling-platform', 2)"></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag">Particle Swarm Optimizer</span>
+                                <span class="project-tag">Python</span>
+                                <span class="award-badge">
+                                    <i class="fas fa-trophy"></i>
+                                    Innovative IT Solution Award
+                                </span>
+                            </div>
+                            
+                            <h4>E-Sked: OJT Project</h4>
+                            
+                            <p>A smart scheduling system using the PSO algorithm to automatically generate fast, optimized, and conflict-free schedules.</p>
+                            
+                            <div class="project-buttons">
+                                <a class="btn-github disabled">
+                                    <i class="fab fa-github"></i>Private Repo
+                                </a>
+                                <button class="btn-demo" disabled title="Demo not available">
+                                    <i class="fas fa-video-slash"></i> No Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VR-application Project -->
+                <div class="col-md-6 col-lg-4 scroll-animate">
+                    <div class="project-card" data-project-id="VR-application">
+                        <div class="project-image">
+                            <div class="project-slideshow">
+                                <div class="project-slide active">
+                                    <img src="asset/image/DriveSafe1.png" alt="">
+                                </div>
+                                <div class="project-slide">
+                                    <img src="asset/image/DiveSafe2.png" alt="">
+                                </div>
+                                <div class="project-slide">
+                                    <img src="asset/image/DriveSafe3.png" alt="">
+                                </div>
+                            </div>
+                            <button class="slideshow-arrow prev" onclick="changeSlide(event, 'VR-application', -1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slideshow-arrow next" onclick="changeSlide(event, 'VR-application', 1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <div class="slideshow-indicators">
+                                <span class="indicator-dot active" onclick="goToSlide(event, 'VR-application', 0)"></span>
+                                <span class="indicator-dot" onclick="goToSlide(event, 'VR-application', 1)"></span>
+                                <span class="indicator-dot" onclick="goToSlide(event, 'VR-application', 2)"></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Unreal Engine</span>
+                            <span class="award-badge">
+                                <i class="fas fa-trophy"></i>
+                                Best in Thesis Award
+                            </span>
+                            <h4>VR Driving Simulation with Behavior Analytics</h4>
+                            <p>An Unreal Engine-powered VR driving simulation that monitors and analyzes driver behavior in real time to deliver realistic training and safety assessments.</p>
+                            <div class="project-buttons">
+                                <a href="https://drive.google.com/drive/folders/19cjIQANxZP56xRT53vVm1ZVHVoi2NE9o?usp=drive_link" class="btn-github" target="_blank">
+                                    <i class="fab fa-github"></i> Source Code
+                                </a>
+                                <button class="btn-demo" data-bs-toggle="modal" data-bs-target="#demoModal" 
+                                        data-system-url="https://drive.google.com/file/d/1s0x_QKkk06QZVqqdu8oUl46q6HTJFuXv/preview"
+                                        data-project="E-Sked: OJT Project">
+                                    <i class="fas fa-play"></i> Video Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Certifications & Awards Section -->
+    <section id="certifications" class="py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Certifications & Awards</h2>
+            <p class="text-center mb-5 scroll-animate" style="font-size: 1.2rem; color: #64748B; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Recognition and credentials that validate expertise and commitment to excellence in technology and innovation.
+            </p>
+
+            <!-- Awards -->
+            <div class="mb-5">
+                <h3 class="text-center mb-4 scroll-animate" style="color: #1e293b; font-size: 1.8rem; font-weight: 600;">
+                    <i class="fas fa-trophy" style="color: #f59e0b; margin-right: 10px;"></i>Awards & Recognitions
+                </h3>
+                <div class="row g-4">
+                    <div class="col-md-6 scroll-animate">
+                        <div class="cert-card" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 5px solid #f59e0b;">
+                            <div class="cert-icon" style="background: #f59e0b;">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4 style="color: #92400e;">Best in Thesis Award</h4>
+                                <p class="cert-issuer" style="color: #b45309;">Academic Excellence Recognition</p>
+                                <p class="cert-description">In recognition of outstanding performance in the thesis project “DRIVESAFE: A Virtual Reality Application for Road Safety Using Random Forest Algorithm,” demonstrating exceptional innovation, technical competence, and practical application in Computer Science. Awarded this 18th day of June 2025 at City College of Calamba.</p>
+                                <div class="cert-date" style="color: #92400e;">
+                                    <i class="fas fa-calendar-alt"></i> 2025
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 scroll-animate">
+                        <div class="cert-card" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); border-left: 5px solid #3b82f6;">
+                            <div class="cert-icon" style="background: #3b82f6;">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4 style="color: #1e3a8a;">Innovative IT Solution Award</h4>
+                                <p class="cert-issuer" style="color: #1e40af;">Innovation Excellence</p>
+                                <p class="cert-description">In recognition of exceptional innovation and creativity in developing impactful IT solutions, demonstrating advanced technical skill and inventive problem-solving that contribute to technological progress in industry and society. Awarded this 18th day of June 2025 at City College of Calamba.</p>
+                                <div class="cert-date" style="color: #1e3a8a;">
+                                    <i class="fas fa-calendar-alt"></i> 2025
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Technical Expertise</h2>
+            <p class="text-center mb-5 scroll-animate" style="font-size: 1.2rem; color: #64748B; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Proficient in modern technologies and frameworks, delivering scalable solutions across web development, automation, machine learning, and IoT ecosystems.
+            </p>
+            <div class="text-center scroll-animate">
+                <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+                <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+                <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+                <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill-badge"><i class="fab fa-html5"></i> HTML</span>
+                <span class="skill-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+                <span class="skill-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                <span class="skill-badge"><i class="fab fa-laravel"></i> Laravel</span>
+                <span class="skill-badge"><i class="fas fa-cubes"></i> Unreal Engine</span>
+                <span class="skill-badge"><i class="fas fa-microchip"></i> IoT</span>
+                <span class="skill-badge"><i class="fas fa-brain"></i> Machine Learning</span>
+                <span class="skill-badge"><i class="fas fa-robot"></i> Automation</span>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Demo Modal with Loading -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width: 95vw;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="demoModalLabel">Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Loading Spinner -->
+                    <div id="loadingSpinner" class="loading-container">
+                        <div class="spinner-wrapper">
+                            <div class="spinner-circle"></div>
+                            <p class="loading-text">Loading demo system<span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></p>
+                            <p class="loading-subtext">Please wait while we prepare your demo</p>
+                        </div>
+                    </div>
+                    <!-- Iframe -->
+                    <iframe id="systemIframe"
+                        src="" 
+                        title="Demo System">
+                    </iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 scroll-animate">
+                    <div class="contact-form">
+                        <form>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-4">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom btn-lg w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title scroll-animate">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 scroll-animate">
+                    <div class="contact-form">
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-details">
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">
+                                        <a href="mailto:your.email@example.com" class="contact-link">your.email@example.com</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div class="contact-details">
+                                    <div class="contact-label">Mobile</div>
+                                    <div class="contact-value">
+                                        <a href="tel:+639694981837" class="contact-link">+63 969 498 1837</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="mb-4">
+                <a href="https://github.com/princeroi" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon disabled" onclick="event.preventDefault(); alert('LinkedIn account coming soon!')"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon disabled" onclick="event.preventDefault(); alert('Twitter account coming soon!')"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon disabled" onclick="event.preventDefault(); alert('Instagram account coming soon!')"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 Prince Roi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/script.js"></script>
+</body>
+</html>
