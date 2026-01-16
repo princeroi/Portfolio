@@ -8,6 +8,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="asset/css/styles.css" />
+    <link rel="stylesheet" href="asset/css/model.css" />
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.162.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.162.0/examples/jsm/",
+        "dat.gui": "https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.module.js"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navbar -->
@@ -22,6 +33,7 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#model-viewer">3D Model</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -260,6 +272,23 @@
                 </div>
     </section>
 
+    <!-- 3D Model Viewer Section -->
+    <section id="model-viewer" class="py-5" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white;">
+        <div class="container">
+            <h2 class="section-title scroll-animate" style="color: white;">Interactive 3D Model Viewer</h2>
+            <p class="text-center mb-5 scroll-animate" style="font-size: 1.1rem; color: #cbd5e1; max-width: 800px; margin-left: auto; margin-right: auto;">
+                Explore an interactive 3D model with full rotation, zoom, and dimension annotation controls. Powered by Three.js.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 scroll-animate">
+                    <div id="modelContainer" style="width: 100%; height: 600px; background: #000; border-radius: 8px; overflow: hidden; position: relative;">
+                        <!-- 3D Model Viewer will be rendered here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Certifications & Awards Section -->
     <section id="certifications" class="py-5" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
         <div class="container">
@@ -440,6 +469,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    <script src="asset/js/script.js"></script>
+    <script src="asset/js/script.js"defer></script>
+    <script type="module" src="asset/js/model.js" defer></script>
 </body>
 </html>
